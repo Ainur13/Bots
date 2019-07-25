@@ -6,7 +6,7 @@ import flask
 appname="test-bot-ainur"
 token="741658068:AAHC5WWTIL1LN_fUICoeCKxw9GUC5NOSct0"
 bot = telebot.TeleBot(token)
-
+server = flask.Flask(__name__)
 apikey="a5f0fc8611a415ab2f3dddca814f4516"
 
 @bot.message_handler(commands=["start"])
